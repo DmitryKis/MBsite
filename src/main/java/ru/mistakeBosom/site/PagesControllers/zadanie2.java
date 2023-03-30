@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/com")
+@RequestMapping("/ru")
 public class zadanie2 {
 
     @GetMapping
