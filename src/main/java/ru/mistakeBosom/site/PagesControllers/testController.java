@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
         @GetMapping
         public String get(Model model) {
-            return "testPage";
+            return "Task2";
         }
     }
 
