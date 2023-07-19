@@ -12,6 +12,6 @@ public class MainController {
 
     @GetMapping
     public String get(Model model) {
-        return "mainPage";
+        return "index";
     }
 }

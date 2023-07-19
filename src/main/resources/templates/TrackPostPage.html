@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+<div style="width: 60%; margin: 0 auto; text-align: center;background:rgb(150, 150, 150);content-align: center;">
+<form>
+    <p>Электронная почта *</p>
+    <input type="email" name="email">
+    <p>Личный номер телефона. Для контакта *</p>
+    <input type="tel" name="tel" pattern="8[0-9]{10}">
+    <div class="radio_group">
+        <p>Откуда пришел? *</p>
+        <label><input type="radio" value="CЕМЬЯ" name="from_group"><span>CЕМЬЯ</span></label>
+        <label><input type="radio" value="ACRYL" name="from_group"><span>ACRYL</span></label>
+        <label><input type="radio" value="Дистрибуция" name="from_group"><span>Дистрибуция</span></label>
+    </div>
+    <p>Псевдоним артиста(ов) *</p>
+    <input type="text" name="nickname">
+    <p>Feat. Псевдоним артиста(ов), если нет то ставим -</p>
+    <input type="text" name="feat">
+    <p>Название релиза *</p>
+    <input type="text" name="track_name">
+    <div class="radio_group" style="display: block;">
+        <p>Версия трека *</p>
+        <div><label><input type="radio" value="Original"
+                           name="version_group"><span>Original (Oфф. версия)</span></label></div>
+        <div><label><input type="radio" value="Remix" name="version_group"><span>Remix</span></label></div>
+        <div><label><input type="radio" value="Acoustic" name="version_group"><span>Acoustic</span></label></div>
+        <div><label><input type="radio" value="ExtendedMix" name="version_group"><span>Extended mix</span></label></div>
+        <div><label><input type="radio" value="RadioMix" name="version_group"><span>Radio mix</span></label></div>
+        <div><label><input type="radio" value="COVER" name="version_group"><span>COVER</span></label></div>
+    </div>
+    <p>Версия трека, ОБЯЗАТЕЛЬНО (нужно указать чья версия "prod. by GreeN LeeN")</p>
+    <input type="text" name="track_name">
+    <p>ФИО авторов музыки (Полностью)</p>
+    <input type="text" name="artist_name">
+    <p>ФИО авторов текста (Полностью)</p>
+    <input type="text" name="lirycs_name">
+    <div class="radio_group">
+        <p>Маты *</p>
+        <div><label><input type="radio" value="true" name="mats_group"><span>Да</span></label></div>
+        <div><label><input type="radio" value="false" name="mats_group"><span>Нет</span></label></div>
+    </div>
+    <div class="radio_group">
+        <p>Жанр</p>
+        <div><label><input type="radio" value="Rap" name="mats_group"><span>Реп, хип-хоп</span></label></div>
+        <div><label><input type="radio" value="Rock" name="mats_group"><span>Рок</span></label></div>
+        <div><label><input type="radio" value="Альтернатива" name="mats_group"><span>Альтернатива</span></label></div>
+        <div><label><input type="radio" value="Поп" name="mats_group"><span>Поп</span></label></div>
+        <div><label><input type="radio" value="Электроника" name="mats_group"><span>Электроника</span></label></div>
+        <div><label><input type="radio" value="Джаз" name="mats_group"><span>Джаз</span></label></div>
+        <div><label><input type="text" name="mats_group"><span>Другое</span></label></div>
+    </div>
+    <p>Дата релиза </p>
+    <input type="datetime-local" id="date" name="date"/>
+    <p>Время начало для тик тока в секундах</p>
+    <input type="text" name="tiktok" id="tiktok">
+    <p>Ссылки на соцсети артиста(ов)</p>
+    <input type="text" name="tiktok" id="artist_pages">
+    <p>Описание трека (Чем больше инфы, тем лучше для продвижения трека)</p>
+    <input type="text" name="tiktok" id="about_track">
+    <p>Процесс записи трека (Чем больше инфы, тем лучше для продвижения трека)</p>
+    <input type="text" name="tiktok" id="about_rec">
+    <p>О себе (Реп артист из Новосибирска и тд, локально известная рок группа и тд)</p>
+    <input type="text" name="tiktok" id="about_artist">
+    <p>Ссылка на облако где: 🆘
+        1) видео и скрин и проект (трекаут) бита и трека ЛИБО скан лицензионный/правовой/об отчуждении прав договора
+        2) обложка 4000х4000 пикселей и psd проект по слоям
+        3) трек mp3 и wav (16 бит)
+        4) текст трека (все повторения пишем, в конце строчек только ?! либо ничего, соблюдаем пунктуацию и орфографию.
+        Без () «».
+        5) фото студийного качества (по желанию)</p>
+    <input type="text" name="tiktok" id="cloud">
+    <div><input type="submit" value="Send" class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"></div>
+</form>
+</div>
+</body>
+</html>
